@@ -1,7 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
 import type { Tattoo, Artist } from '../types';
 
-const API_KEY = process.env.API_KEY;
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 
 if (!API_KEY) {
   // This is a fallback for development and will be replaced by the environment-provided key.
