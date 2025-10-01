@@ -96,10 +96,10 @@ export const HomePage: React.FC<HomePageProps> = ({
         <div 
           ref={state.ref} 
           onScroll={state.checkScrollability} 
-          className="flex overflow-x-auto space-x-6 pb-4 -mx-4 px-4 no-scrollbar scroll-smooth"
+          className="flex overflow-x-auto space-x-6 pb-4 -mx-4 px-4 no-scrollbar scroll-smooth snap-x snap-mandatory"
         >
           {React.Children.map(children, child => (
-            <div className={`flex-shrink-0 ${itemWidthClass}`}>
+            <div className={`flex-shrink-0 ${itemWidthClass} snap-start`}>
               {child}
             </div>
           ))}
