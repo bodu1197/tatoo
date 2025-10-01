@@ -117,7 +117,7 @@ const App: React.FC = () => {
   const notificationAudioRef = useRef<HTMLAudioElement | null>(null);
   if (!notificationAudioRef.current) {
     // A simple, short ping sound as a base64 data URL to avoid external file dependencies.
-    const audioSrc = 'data:audio/wav;base64,UklGRl9vT19XQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YU9vT19AAAAA//8CAP/e//4D/xABDEO8B/P/4//8A//4A/wEA/wD/AP8A5wD3AP8A8gD3AP8A7wD3AP8A7gD3AP8A7QD3AP8A6wD3AP8A6AD3AP8A5wD3AP8A5gD3AP8A5AD3AP8A4wD3AP8A4AD3AP8A3wD3AP8A3QD3AP8A2gD3AP8A2AD3AP8A1QD3AP8A0wD3AP8A0AD3AP8A/wD/';
+    const audioSrc = 'data:audio/wav;base64,UklGRuy3AABXQVZFZm10IBAAAAABAAEAIlYAACJWAAABAAgAZGF0Yci3AACIhISCgH5+enx+gHx4cm5udHp+fHh0cHJ0enx8enx+fn6GiIyMiIaKio6Wmp6goJycnp6coJ6cnJqanqSoqqigmJKSmJygop6ampycmpaOjIiIhoSChoiGgHx2cG5qaGhiYmRkZmRgXFpUUlJUVlhcVlZYWmBgYFxaWlxiZmpsbGxsampubnBwbmxsbnB0cHBubGpqbGxwcnRwbnB2enyAfoB8fH5+goSEhISCgICEhoyKhoCChIiMjIyKiIaCgoaMioiEhISGjpaanJyYlpSWnqKkoJyYlpiYmJaSkI6MioSKjIyIhIB8en5+fHp2eHp6fn6AfHp8enh8foSEgoJ+foKGiIaAeHR2dn58fHx8fHZ2cnBydnRwcHJ6fHp2dHBwbm5sbm5wcHJubnB0dHBwbG50dnx8enp4enZ2dnZ0dnh4fH5+fHp2dHR0enZ0cnZ6eHp6eHh0dnh0dHZ2eHZ0cGxqamZiXFpYWFhaWlhYVlhYVlZaWl5gYGJkZmhoaGxucHJ0eHR2en58fHh0dnZ8foCAgH6ChoSEhISEhoaIjJKWmpiSkpSWmp6enJiampqcnpqYkI6MjIyOjIiGhoiIhoqIiISChISKjo6MiISEhoqOkJKSkpSQjpKYmpqWkJCOkpKUkpKQio6OjI6MhoKAenp2dHJuamhoZGRoamhmZmZkZmhqamhoaGxsbm5qamZoaGpqbm5ubmxuamxsbm50cnR2fHx+foSAfn6CiIqMjpKSkpaeoqCWlJSWlpSanp6alJSSkJCSlpaSkpKWmqCemJKOjI6SlpaYnJqUlJaYlpKQkJCSlpqYkI6OjoyKiIiEgHx+';
     notificationAudioRef.current = new Audio(audioSrc);
   }
   // --- END NOTIFICATION STATE ---
