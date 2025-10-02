@@ -36,7 +36,7 @@ const AIImageGenerator: React.FC = () => {
         <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl shadow-2xl border border-gray-700">
             <div className="text-center mb-6">
                 <SparklesIcon className="w-12 h-12 mx-auto text-pink-400 mb-2" />
-                <h2 className="text-2xl md:text-3xl font-bold">AI 타투 이미지 생성기</h2>
+                <h2 className="text-[1.2rem] md:text-3xl font-bold">AI 타투 이미지 생성기</h2>
                 <p className="text-gray-400 mt-2">상상 속의 타투를 현실로 만들어보세요. AI가 직접 도안을 그려줘요.</p>
             </div>
             <div className="max-w-2xl mx-auto">
@@ -153,7 +153,7 @@ export const AIZonePage: React.FC<AIZonePageProps> = ({ tattoos }) => {
           <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl shadow-2xl border border-gray-700">
             <div className="text-center mb-6">
               <SparklesIcon className="w-12 h-12 mx-auto text-cyan-400 mb-2" />
-              <h2 className="text-2xl md:text-3xl font-bold">AI 타투 아이디어 생성기</h2>
+              <h2 className="text-[1.2rem] md:text-3xl font-bold">AI 타투 아이디어 생성기</h2>
               <p className="text-gray-400 mt-2">아이디어가 떠오르지 않나요? 컨셉을 설명하면 AI가 영감을 줄 거예요.</p>
             </div>
             <div className="max-w-2xl mx-auto">
