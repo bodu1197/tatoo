@@ -144,7 +144,7 @@ export const ArtistProfilePage: React.FC<ArtistProfilePageProps> = ({ artist, ta
   }
 
   return (
-    <div className="animate-fade-in bg-gray-900">
+    <div className="bg-gray-900">
       <header className="p-4 flex items-center absolute top-0 left-0 right-0 bg-gradient-to-b from-black/60 to-transparent z-20">
         <button onClick={onBack} className="p-2 rounded-full bg-black/30 hover:bg-black/50 transition-colors" aria-label="Go back">
           <ChevronLeftIcon className="w-6 h-6" />
